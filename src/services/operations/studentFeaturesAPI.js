@@ -67,7 +67,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             }
         }
         //miss hogya tha 
-        const paymentObject = new Window.Razorpay(options);
+        const paymentObject = new window.Razorpay(options);
         paymentObject.open();
         paymentObject.on("payment.failed", function(response) {
             toast.error("oops, payment failed");
@@ -75,6 +75,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
         })
 
     }
+
     catch(error) {
         console.log("PAYMENT API ERROR.....", error);
         toast.error("Could not make Payment");
