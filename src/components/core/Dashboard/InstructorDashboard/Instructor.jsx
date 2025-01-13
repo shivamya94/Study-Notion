@@ -13,7 +13,7 @@ export default function Instructor() {
     const [courses, setCourses] = useState([])
   
     useEffect(() => {
-      ;(async () => {
+      (async () => {
         setLoading(true)
         const instructorApiData = await getInstructorData(token)
         const result = await fetchInstructorCourses(token)
@@ -24,7 +24,7 @@ export default function Instructor() {
         }
         setLoading(false)
       })()
-    }, [])
+    }, [token])
   
     const totalAmount = instructorData?.reduce(
       (acc, curr) => acc + curr.totalAmountGenerated,
@@ -109,7 +109,7 @@ export default function Instructor() {
                       </p>
                       <div className="mt-1 flex items-center space-x-2">
                         <p className="text-xs font-medium text-richblack-300">
-                          {course.studentsEnroled.length} students
+                          {course.studentsEnrolled.length} students
                         </p>
                         <p className="text-xs font-medium text-richblack-300">
                           |
