@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import ReactStars from "react-rating-stars-component"
+import ReactStars from "react-rating-rating-component"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
