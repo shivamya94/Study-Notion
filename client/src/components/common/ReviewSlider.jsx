@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
-import ReactStars from 'react-rating-star-component'; // ✅ correct
+// ✅ correct
+import { StarRating } from 'react-rating-star-component';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
