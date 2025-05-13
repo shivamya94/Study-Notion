@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import ReactStars from "react-rating-rating-component"
+import ReactStars from 'react-rating-star-component'; // ✅ correct
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -11,7 +11,7 @@ import "../../App.css"
 // Icons
 import { FaStar } from "react-icons/fa"
 // Import required modules
-import { Autoplay, FreeMode, Pagination } from "swiper"
+import { Autoplay, FreeMode, Pagination } from "swiper/modules"
 
 // Get apiFunction and the endpoint
 import { apiConnector } from "../../services/apiconnector"
